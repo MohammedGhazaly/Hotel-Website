@@ -5,6 +5,7 @@
 ---
 
 This is the 1st project in his udemy course
+[Live Preview](https://mohammedghazaly.github.io/Hotel-Website/index.html)
 
 ## screenshots
 
