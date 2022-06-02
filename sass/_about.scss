@@ -1,0 +1,57 @@
+.info {
+  padding: 3rem 0;
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+  }
+  &__text,
+  &__img-box {
+    flex: 1;
+  }
+  &__heading {
+    font-size: 4.8rem;
+  }
+  &__paragraph {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  &__img {
+    border-radius: 50%;
+    width: 35rem;
+    display: block;
+  }
+}
+// Testimonials
+.testimonials {
+  padding: 5rem 0;
+  background: url(../imgs/test-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  &__heading {
+    font-size: 4.8rem;
+    color: $white-color;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  &__testimonial {
+    background-color: rgba(247, 191, 136, 0.8);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+    border-radius: 10px;
+    &--first {
+      margin-bottom: 5rem;
+    }
+  }
+  &__img {
+    width: 10rem;
+    border-radius: 50%;
+  }
+  &__caption {
+    font-size: 1.6rem;
+  }
+}

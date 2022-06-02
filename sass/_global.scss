@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap");
+@import "variables";
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.3s all;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+a,
+span {
+  display: inline-block;
+}
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+// *****************Utility classes*****************
+// Highlighting the current nav link we are on.
+.header .current {
+  background-color: #444;
+  color: #f7c08a;
+}
+// Footer
+.footer {
+  background-color: #444;
+  color: $white-color;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 2rem 0;
+}
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+//
+.text-primary {
+  color: $primary-color;
+}
+.lead {
+  font-size: 2rem;
+}
+// Buttons
+@mixin btn {
+  display: inline-block;
+  font-size: 1.8rem;
+  padding: 1.2rem 2.4rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+.btn-dark {
+  @include btn;
+  color: $white-color;
+  background-color: $dark-color;
+  &:hover {
+    color: $dark-color;
+    background-color: $primary-color;
+  }
+}
+.btn-white {
+  @include btn;
+  color: $dark-color;
+  background-color: $white-color;
+  &:hover {
+    color: $dark-color;
+    background-color: $primary-color;
+  }
+}
+// colors
+.bg-dark {
+  background-color: $dark-color;
+  color: #fff;
+}
+.bg-primary {
+  background-color: $primary-color;
+  color: $dark-color;
+}
+.bg-light {
+  background-color: $light-color;
+  color: $dark-color;
+}
